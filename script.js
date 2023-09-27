@@ -11,16 +11,25 @@ counter.innerHTML= increment
 
 })
 
-let decro = document.getElementById('mostrar')
-let decrement = 0;
 let subtractbutton = document.getElementById('subtract')
 
 subtractbutton.addEventListener('click', function() {
-    decrement = decrement - increment
-    console.log(decrement)
+    increment = increment - 1
+    console.log(increment)
 
-    counter.innerHTML= decrement
+    counter.innerHTML= increment
 } )
+
+let resetbutton = document.getElementById('reset')
+
+resetbutton.addEventListener('click', function() {
+    increment = 0
+    console.log(increment)
+
+    counter.innerHTML= increment
+} )
+
+
 
 
 
